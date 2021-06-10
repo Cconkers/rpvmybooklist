@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>📝TO-DO📝</title>
+</head>
+
+<body class="h-100">
+
+
+  <main class="h-100">
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+      <div class="container d-flex flex-column align-items-end">
+        <div class="input-group mb-3">
+
+
+          <input id="escribirTarea" type="text" class="form-control" placeholder="Escribir tarea..."
+            aria-label="Escribir tarea..." aria-describedby="button-addon2">
+
+
+
+
+          <div class="containerEntrada d-flex flex-row-reverse">
+            <button id="botonAdd" class=" rounded-end btn btn-primary" type="button" id="button-addon2">Añadir</button>
+
+
+            <select onchange="getSelectValue()" id="selectorTipo" class=" slcchange border border-primary btn btn-outline-secondary ">
+
+           
+              <option  class="casa" value="Casa">Casa</option>
+              <option class="trabajo" value="Trabajo">Trabajo</option>
+              <option  class="hobby" value="Hobby">Hobby</option>
+            </select>
+
+          </div>
+
+
+        </div>
+
+
+
+        <ul id="lista" class="list-group w-100">
+
+          
+          <li class="w-100 list-group-item d-flex justify-content-between align-items-center"><input type="checkbox">
+            A list item
+            <span class="badge bg-primary rounded-pill">Casa</span>
+          </li>
+
+          <li class="text-left list-group-item d-flex justify-content-between align-items-center"><input type="checkbox">
+            A second list item
+            <span class="badge bg-primary rounded-pill">Trabajo</span>
+          </li>
+        </ul>
+
+
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+
+
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</html>
