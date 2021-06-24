@@ -1,0 +1,102 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  display: block;
+  margin: 8px;
+}
+
+.cabecera {
+  border-bottom: black 3px solid;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.titulocabecera {
+  font-size: 60px;
+  font-family: Snell Roundhand;
+  font-weight: normal;
+  text-align: center;
+}
+.section {
+  border-left: 1px solid black;
+  border-bottom: 3px solid black;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.articulo {
+  border-right: 1px solid black;
+  padding: 0px 10px;
+  display: block;
+}
+
+.titulo_de_articulo {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}
+
+         
+.center {
+  width: 50%;
+}
+.right {
+  width: 25%;
+}
+.left {
+  width: 25%;
+}
+
+.down {
+  width: 25%;
+}
+
+.down_right {
+  width: 75%;
+}
+
+.seccion_columna {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.seccion_lista {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 30px;
+  font-weight: bold;
+  font-family: "Futura";
+  color: #666;
+}
+
+.seccion_politica {
+  background-color: #ffeaa7;
+}
+
+.seccion_tecnologia {
+  background-color: #81ecec;
+}
+
+.seccion_local {
+  background-color: #55efc4;
+}
+
+.seccion_opinion {
+  background-color: #74b9ff;
+}
+
+.seccion_deporte {
+  background-color: #a29bfe;
+}

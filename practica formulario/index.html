@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <title>Práctica formulario</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Formulario Web</h1>
+    </header>
+    <fieldset class="recuadro">
+        <legend>Formulario de registro</legend>
+
+        <form>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Escribe tu nombre" name="nombre" title="Por favor ingresa en esta casilla tu nombre" required/>  
+
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required placeholder="Escribe tu email" title="Por favor ingresa en esta casilla tu email"/>
+
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" required placeholder="Escribe tu teléfono"  title="Por favor ingresa en esta casilla tu número de telefono" />
+
+            <label for="pais">País:</label>
+            <input name="pais" list="paises"  required placeholder="Escribe tu país" title="Por favor ingresa en esta casilla tu país de procedencia">
+
+            <datalist id="paises">
+                <option>Estados Unidos de Norte América</option>
+                <option>Rusia</option>
+                <option>Nueva Zelanda</option>
+                <option>Pamplona</option>
+                <option>Don Bosco</option>
+                <option>Hermitaño</option>
+                <option>!España!</option>
+                <option>Otro planeta</option>
+            </datalist>
+
+            <label>Edad:</label>
+            <input type="number" name="edad" min="18" max="90" required title="Por favor ingresa en esta casilla tu edad">
+
+            <label for="nacimiento">Fecha nacimiento: </label>
+            <input type="date" required name="nacimiento" min="1900-01-01" max="2500-12-31" />
+
+            <div>
+                <input type="submit" value="Enviar" id="enviar">
+            </div>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
